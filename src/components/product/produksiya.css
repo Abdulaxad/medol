@@ -1,0 +1,129 @@
+/* Umumiy */
+.produksiya{
+  flex-wrap: wrap;
+}
+.prodCard{
+  width: 413px;
+  height: 439px;
+  background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+}
+.cardImage{
+  width: 235px;
+  height: 235px;
+  margin: auto;
+}
+.cardImage img{
+  margin-top: 25px;
+  width: 235px;
+}
+.cardTaytl{
+  width: 218px;
+  height: 28px;
+  margin: 25px auto;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* margin: auto!important; */
+  letter-spacing: 0.105em;
+}
+.cardBtn{
+  width: 230px;
+  height: 45px;
+  background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+  opacity: 0.9;
+  border-radius: 35px;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: white;
+  display: block;
+  margin: auto;
+  border: none;
+}
+.cardBtn:hover{
+  background: #00C9C9;
+}
+
+/* Katta ekran uchun */
+
+
+@media (min-width: 1400px){
+  .prodCard{
+    width: 80%;
+    height: 550px;
+  }
+  .cardImage{
+    margin-top: 50px!important;
+  }
+  .cardImage img{
+    width: 100%;
+  }
+  .cardBtn{
+    width: 60%;
+    height: 60px;
+    font-size: 25px;
+  }
+  .pereyti{
+    font-size: 30px;
+  }
+}
+
+
+/* Noutbu uchun */
+
+@media (max-width: 1367px) and (min-width: 1000px){
+  .prodCard{
+    width: 350px!important;
+    background-color: red;
+    height: 400px;
+    background: linear-gradient(180deg, #F8F8F8 0%, rgba(248, 248, 248, 0) 100%);
+    opacity: 0.9;
+    border-radius: 35px;
+    margin-bottom: 25px!important;
+  }
+  .cardImage{
+    margin-top: 20px!important;
+  }
+  .cardImage img{
+    width: 205px;
+    display: block;
+    margin: auto!important;
+  }
+}
+
+
+/* Mobil versiya */
+
+@media (max-width: 576px){
+  .produksiya{
+    width: 100%;
+  }
+  .prodCard{
+    width: 90%;
+    margin: auto!important;
+  }
+  .cardImage{
+    width: 100%;
+    padding-top: 15px!important;
+  }
+  .cardImage img{
+    display: block;
+    margin: auto!important;
+  }
+  .prodCard h1{
+    font-size: 20px;
+    margin: auto!important;
+  }
+  .cardBtn{
+    width: 80%;
+    height: 50px;
+  }
+  .pereyti{
+    font-size: 15px;
+  }
+}

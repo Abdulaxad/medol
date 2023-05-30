@@ -1,0 +1,401 @@
+/* Umumiy */
+.header {
+  background-image: url('../../image/bannerFon.png');
+  min-height: 200px;
+  background-size: cover;
+}
+
+
+
+
+
+.active{
+  background-color: red;
+}
+.remove_active{
+  background-color: none;
+}
+
+.close {
+  display: none;
+  background: none;
+  font-size: 25px;
+}
+
+.close:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search input { 
+  text-indent: 5px;
+  background-color: #fff;
+  border: none;
+  padding: 15px;
+  height: 40px;
+  width: 50px;
+  transition: width 0.3s ease;
+  outline: none;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.search .btn {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 50px;
+  transition: transform 0.3s ease;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.pereyti-title {
+  padding: 10px !important;
+  border-radius: 10px;
+}
+
+.pereyti-title:hover {
+  transition: 1s all ease;
+  color: white;
+  background: var(--bs-link-color);
+  text-decoration: underline;
+}
+
+.btn:focus,
+.input:focus {
+  outline: none;
+}
+
+.search:hover input {
+  width: 200px;
+}
+
+.search:hover .btn {
+  transform: translate(150px);
+}
+
+.tel p,
+.location p {
+  font-size: 12px;
+}
+
+nav {
+  opacity: 0.9;
+  border-radius: 35px;
+  width: 80%;
+  background-color: white;
+  margin: auto !important;
+  margin-top: 20px!important;
+}
+
+nav li {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #e7e7e7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav li:first-child {
+  border-radius: 35px 0 0 35px;
+}
+
+nav li:last-child {
+  border-radius: 0 35px 35px 0;
+}
+
+nav li a {
+  line-height: 45px;
+  color: #0D4C93;
+}
+
+nav ul a:hover {
+  color: #00C9C9;
+}
+
+@media (min-width: 1400px) and (max-width: 1850px) {
+
+  .tel p,
+  .location p {
+    font-size: 17px !important;
+  }
+
+  .facebook {
+    font-size: 20px !important;
+  }
+
+  nav li a {
+    font-size: 18px !important;
+  }
+}
+
+/* 1400dan katta ekranlar */
+
+@media (min-width: 1400px) {
+  .logo img {
+    width: 75% !important;
+  }
+
+  .bi-geo-alt-fill,
+  .bi-telephone-plus {
+    font-size: 35px;
+  }
+
+  .location span p,
+  .tel span p,
+  .tel span p,
+  .facebook {
+    font-size: 20px!important;
+  }
+
+  .lang {
+    font-size: 20px;
+  }
+
+  .search {
+    height: 50px;
+  }
+
+  .search input,
+  .search .btn {
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+
+  }
+
+  nav {
+    margin-top: 30px !important;
+    margin-bottom: 20px !important;
+  }
+
+  nav li a {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 22px;
+  }
+
+}
+
+
+/* Noutbuk ekrani uchun */
+
+@media (max-width: 1150px) and (min-width: 993px) {
+  nav li a {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    line-height: 40px;
+    font-size: 14px;
+    flex-wrap: nowrap;
+  }
+}
+
+
+/* NetBook ekrani uchun */
+@media (max-width: 992px) {
+  nav li a {
+    display: flex;
+    align-items: center !important;
+    justify-content: center;
+    /* line-height: 35px; */
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 862px) and (min-width: 769px) {
+  .topPanel p {
+    font-size: 7px;
+  }
+}
+
+/* Planshet ekrani uchun */
+
+@media (max-width: 768px) {
+ 
+  .header {
+    position: relative;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 5vh;
+    z-index: 999;
+  }
+
+  .header .mobil {
+    min-height: 50px;
+    background-color: #e7e7e7 !important;
+    display: block!important;
+
+  }
+  .header .mobil .isopen{
+    display: block!important;
+  }
+
+  .open {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .head {
+    transition: all 1s ease;
+    min-height: 100vh;
+    background-color: white;
+    width: 30%;
+    z-index: 999;
+  }
+
+  .openMenyu {
+    transform: translateX(-100%);
+    transition: all 1s ease;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+  }
+
+  .topPanel {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .search:hover input {
+    width: 150px;
+    border: 1px solid gray;
+
+  }
+
+  .search:hover .btn {
+    transform: translate(100px);
+  }
+
+  input[type="search"] {
+    background-color: white !important;
+  }
+
+  nav {
+    min-height: 50vh;
+    opacity: 0.9;
+    width: 100%;
+    margin-left: 0 !important;
+    border-radius: 0;
+  }
+
+  nav li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  nav li:first-child,
+  nav li:last-child {
+    border-radius: 0 !important;
+  }
+
+  nav li a {
+    line-height: 39px;
+  }
+
+}
+
+
+/* Mobil ekran uchun */
+
+@media (max-width: 576px) {
+
+  header {
+    position: fixed;
+    width: 100vw;
+    height: 5vh;
+    z-index: 999;
+
+  }
+
+  .mobil {
+    min-height: 50px;
+    background-color: #e7e7e7 !important;
+  }
+
+  .openMenyu {
+    transform: translateX(-100%);
+    transition: all 1s ease;
+    width: 50%;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    cursor: pointer;
+  }
+
+  .topPanel {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .head {
+    width: 50%;
+    z-index: 999;
+  }
+
+  nav {
+    min-height: 50vh;
+    opacity: 0.9;
+    width: 100%;
+    margin-left: 0 !important;
+    border-radius: 0;
+  }
+
+  nav li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  nav li:first-child,
+  nav li:last-child {
+    border-radius: 0 !important;
+  }
+
+  nav li a {
+    line-height: 39px;
+  }
+
+  input[type='search'] {
+    width: 75%;
+    margin: auto;
+  }
+
+}

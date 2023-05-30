@@ -1,0 +1,259 @@
+.main-carousel {
+    max-width: 1440px;
+    height: auto;
+    padding: 10px;
+    margin: auto !important;
+}
+
+.carousel-text {
+    height: 100%;
+    margin: auto;
+    padding: 2% !important;
+}
+
+.text-title {
+    width: 60%;
+    text-align: center;
+    margin-top: 20px !important;
+    margin-left: 10% !important;
+}
+
+.text-title h2 {
+    font-size: 35px;
+    font-weight: 500;
+    color: #0D4C93;
+}
+
+.text-body {
+    width: 80%;
+    margin: 20px 0 20px 10% !important;
+    padding: 10px !important;
+}
+
+.text-body p {
+    font-size: 24px;
+    line-height: 30px;
+    color: #363535;
+}
+
+.text-link .forbtn {
+    width: 40%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+    border-radius: 35px;
+    border: none;
+    opacity: 0.9;
+    padding: 10px !important;
+    margin-left: 20% !important;
+    margin-top: 50px;
+}
+
+.text-link .forbtn:hover {
+    background: linear-gradient(#00C9C9, #06f8f8) !important;
+    transition: 1.5s all linear !important;
+    border: none;
+}
+
+.carousel-img {
+    height: 100%;
+    background-image: url("../../image/back.png");
+    background-repeat: no-repeat;
+    background-position: 30% 55%;
+    background-size: 55%;
+    margin-top: 2% !important;
+}
+
+.carousel-img img {
+    width: 60%;
+    height: 300px;
+    overflow: hidden;
+    margin: 8% !important;
+    /* height: 300px; */
+}
+
+.main-carousel .slick-slider .slick-next::before,
+.main-carousel .slick-slider .slick-prev::before {
+    content: none !important;
+}
+
+.main-carousel .slick-slider .slick-dots li {
+    margin-left: 5px !important;
+}
+
+.main-carousel .slick-slider .slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 20px;
+
+    width: 40px !important;
+    height: 40px !important;
+    color: #00C9C9 !important;
+    opacity: .25;
+}
+
+.main-carousel .slick-slider .slick-dots li.slick-active button:before {
+    opacity: .75 !important;
+
+}
+
+@media screen and (max-width:1100px) {
+    .carousel-img {
+        background-size: 55%;
+        margin-top: 5% !important;
+    }
+
+    .carousel-img img {
+        width: 60%;
+        margin: 8% !important;
+        /* height: 300px; */
+    }
+
+    .text-title h2 {
+        font-size: 30px;
+    }
+
+    .text-body {
+        width: 100%;
+        margin: 20px 0 20px 10% !important;
+        margin-left: 0 !important;
+    }
+
+    .text-body p {
+        font-size: 20px;
+    }
+}
+
+
+/* Noutbuk uchun */
+
+@media screen and (max-width:968px) {
+    .text-title {
+        width: 80%;
+        margin-top: 0px !important;
+    }
+
+    .text-title h2 {
+        font-size: 30px;
+    }
+
+    .text-body {
+        width: 90%;
+        margin-left: 5% !important;
+        padding: 0px !important;
+        margin-top: 10px !important;
+    }
+
+    .text-body p {
+        font-size: 20px;
+    }
+
+    .carousel-img {
+        margin-top: 3% !important;
+    }
+
+    .carousel-img img {
+        width: 90%;
+        height: auto;
+        margin-top: 25% !important;
+    }
+
+    .carousel-img {
+        background-position: 55% 65%;
+        background-size: 70%;
+    }
+}
+
+/* Tablet uchun */
+
+@media screen and (max-width:768px) {
+    .text-title h2 br {
+        display: none;
+    }
+
+    .text-title h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-link .forbtn {
+        width: 80%;
+        font-size: 14px;
+        margin-left: 10% !important;
+    }
+
+    .carousel-text {
+        margin-top: 15% !important;
+    }
+
+    .text-body p {
+        display: none !important;
+    }
+}
+
+
+/* Kichikroq tablet uchun */
+@media screen and (max-width:576px) {
+
+    .carousel-text {
+        /* margin-top: 0!important; */
+        margin-bottom: 0 !important;
+        margin-top: 0% !important;
+
+        order: 2;
+    }
+
+    .carousel-img {
+        order: 1;
+        min-height: 200px !important;
+        background-position: 50% 55%;
+        background-size: 55%;
+        margin-top: 15% !important;
+    }
+
+    .carousel-img img {
+        width: 70%;
+        height: auto;
+        margin: auto !important;
+        margin-top: 0% !important;
+    }
+}
+
+
+/* Mobil versiya */
+@media screen and (max-width:425px) {
+    .carousel-img {
+        min-height: 100px !important;
+        background-position: 50% 55%;
+        background-size: 55%;
+        margin-top: 15% !important;
+    }
+
+    .carousel-img img {
+        width: 70%;
+        height: auto;
+        margin: auto !important;
+        margin-top: 0% !important;
+    }
+
+    .text-title h2 {
+        font-size: 1rem;
+    }
+
+    .text-link .forbtn {
+        width: 80%;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 3px !important;
+        margin-left: 10% !important;
+        margin-top: 0px !important;
+
+    }
+
+    
+
+    .text-body p {
+        display: none !important;
+    }
+
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "img": "./assets/product/endovaskulyar.png",
+    "name": "Эндоваскулярная хирургия"
+  },
+  {
+    "img": "./assets/product/laborator.png",
+    "name": "Лабораторная диагностика"
+  },
+  {
+    "img": "./assets/product/kardio.png",
+    "name": "Кардиохирургия"
+  },
+  {
+    "img": "./assets/product/diabet.png",
+    "name": "ДИАБЕТ"
+  },
+  {
+    "img": "./assets/product/endourologiya.png",
+    "name": "ЭНДОУРОЛОГИЯ"
+  },
+  {
+    "img": "./assets/product/aritmologiya.png",
+    "name": "АРИТМОЛОГИЯ"
+  }
+]

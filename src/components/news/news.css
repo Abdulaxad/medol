@@ -1,0 +1,230 @@
+.news {
+    max-width: 1440;
+    height: auto;
+    background-color: #F5F5F5;
+}
+
+.news-title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45px;
+    line-height: 100%;
+    color: rgba(13, 76, 147, 1);
+}
+
+.news-body {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-left: 5% !important;
+    /* padding: 10px 0; */
+}
+
+.news .slick-slide>div {
+    margin: 0 20px !important;
+}
+
+.news .slick-list {
+    margin: 0 -20px;
+}
+
+.news-body .card {
+    width: 30%;
+    height: auto;
+    background-color: #f6f6f6;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    margin: 5px !important;
+    text-align: center;
+    border: none;
+}
+
+.news-body .card:hover {
+    transition: .5s all ease-in-out;
+    transform: scale(1.01);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.news-body .card img {
+    width: 95%;
+    margin: 5px auto!important;
+    border-radius: 40px;
+}
+
+.news-body .card-title {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #0D4C93;
+    margin: 30px 0px !important;
+    /* padding-top: 40px!important; */
+}
+
+.news-body .card-title:hover {
+    text-decoration: underline !important;
+    color: rgba(0, 201, 201, 1);
+
+}
+
+.news-body .card-body h4 {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center !important;
+    color: #0D4C93;
+    margin: 10px !important;
+}
+
+.news-body .card-text {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center !important;
+    color: #000000;
+    margin: 10px 0 15px !important;
+}
+
+.news .linked {
+    width: 90%;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    background: linear-gradient(90deg, #0D4C93 0%, #00C9C9 100%);
+    border-radius: 35px;
+    border: none;
+    opacity: 0.9;
+    padding: 10px !important;
+    margin-left: 5% !important;
+}
+
+.news .btn:hover {
+    background: linear-gradient(#00C9C9, #06f8f8) !important;
+    transition: 1.5s all linear !important;
+    border: none;
+}
+
+.news-body .slick-prev,
+.news-body .slick-next {
+    z-index: 100;
+}
+
+.news-body .slick-prev {
+    left: -40px;
+}
+
+.news-body .slick-next {
+    right: -20px;
+}
+
+.slick-prev:before {
+    content: url("../../../public/rarrow.png") !important;
+}
+
+.slick-next:before {
+    content: url("../../../public/larrow.png") !important;
+}
+
+.news-link {
+    padding: 10px !important;
+    padding-bottom: 20px !important;
+}
+
+.forleft {
+    /* margin-left: 15% !important */
+    padding: auto !important;
+    margin: auto !important;
+}
+
+.news-link a {
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 30px;
+    color: #00C9C9;
+    padding: 10px !important;
+    border-radius: 10px;
+    /* margin-left: 15% !important; */
+}
+
+.news-link a.last {
+    color: #0D4C93;
+}
+
+.news-link a.last:hover {
+    background: rgba(13, 76, 147, 1);
+}
+
+.news-link a:hover {
+    transition: 1s all ease;
+    color: white;
+    background: rgba(0, 201, 201, 1);
+    text-decoration: underline;
+
+}
+
+.news-link a svg {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1040px) {
+    .news-body {
+        width: 90% !important;
+    }
+
+    .news-body .slick-prev {
+        left: -30px;
+    }
+
+    .news-body .slick-next {
+        right: -6px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .news-body .slick-slide>div {
+        margin: 10px;
+    }
+
+    .news-body .slick-list {
+        margin: 10px;
+    }
+
+    .news-body .slick-prev {
+        left: -10px;
+    }
+
+    .news-body .slick-next {
+        right: 5px;
+    }
+
+    .news-link {
+        padding: 0;
+    }
+
+    .news-link a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .forflex {
+        flex-direction: column !important;
+    }
+
+    .news-body .slick-next {
+        right: 20px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .news-link a {
+        font-size: 16px;
+    }
+
+    .news-link a svg {
+        margin-left: 5px;
+    }
+
+    .news-body .slick-next {
+        right: 20px;
+    }
+}
